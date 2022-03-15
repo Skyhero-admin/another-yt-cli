@@ -9,9 +9,7 @@
 
 ---
 ## Demo:
-<centre>
-    <img src="https://cdn.discordapp.com/attachments/905074139327516691/953250192197570600/demo.gif" width='800px'>
-</centre>
+<img src="./assets/demo.gif" width=100%>
 
 ### **Requirements**:
 The following packages need to be installed:
