@@ -9,7 +9,9 @@
 
 ---
 ## Demo:
-<img src="https://cdn.discordapp.com/attachments/905074139327516691/953245492601565194/deno.gif">
+<centre>
+    <img src="https://cdn.discordapp.com/attachments/905074139327516691/953250192197570600/demo.gif" width='800px'>
+</centre>
 
 ### **Requirements**:
 The following packages need to be installed:
