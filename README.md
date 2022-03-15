@@ -9,7 +9,7 @@
 
 ---
 ## Demo:
-<img src="./assets/tp.gif">
+<img src="https://cdn.discordapp.com/attachments/905074139327516691/953245492601565194/deno.gif">
 
 ### **Requirements**:
 The following packages need to be installed:
