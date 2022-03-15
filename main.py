@@ -39,8 +39,14 @@ def get_link(name):
 				for k,v in val.items():
 					# print(k)
 					# print(v)
-					if k == "videoId" and len(v) == 11:
-						return "https://www.youtube.com/watch?v="+v
+					try:
+						if k == "videoId" and len(v) == 11:
+							# print(v)
+							return "https://www.youtube.com/watch?v="+v
+						# if k =="title":
+							# print(v["runs"][0]["text"])
+					except Exception as e:
+						print("An error occured:",e)
 
 	# dom = etree.HTML(str(soup))
 	# print(dom.xpath('//*[@id="video-title"]')[0].text)
@@ -57,11 +63,15 @@ def get_video_name():
 	return name
 
 def play(link):
-	print("Trying to play: "+link)
+	if str(type(link)) == "<class 'NoneType'>":
+		print("An error occured!!!")
+		return
+
+	print("Trying to play: ",link)
 	os.system("mpv --ytdl-format=18 "+link)
 	print()
 
 # MAIN PROGRAM starts here
-name = get_video_name()
-res = get_link(name)
+n = get_video_name()
+res = get_link(n)
 play(res)
