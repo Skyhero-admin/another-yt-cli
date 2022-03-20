@@ -1,4 +1,4 @@
-import requests, re, json, os, sys
+import requests, re, json, os
 from lxml import etree
 from bs4 import BeautifulSoup
 
@@ -72,11 +72,6 @@ def play(link):
 	print()
 
 # MAIN PROGRAM starts here
-if __name__ == "__main__":
-	if(len(sys.argv)>1):
-		res = get_link(" ".join(sys.argv[1:]))
-		play(res)
-	else:
-		n = get_video_name()
-		res = get_link(n)
-		play(res)
+n = get_video_name()
+res = get_link(n)
+play(res)
