@@ -40,7 +40,8 @@ def get_link(name):
 					# print(k)
 					# print(v)
 					try:
-						if k == "videoId" and len(v) == 11:
+						if k == "videoId" :
+							# and len(v) == 11
 							# print(v)
 							return "https://www.youtube.com/watch?v="+v
 						# if k =="title":

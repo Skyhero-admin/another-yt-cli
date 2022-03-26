@@ -9,7 +9,7 @@
 
 ---
 ## Demo:
-<img src="./assets/demo.gif" width=100%>
+<img src="https://imgur.com/3gdz7KA" width=100%>
 
 ### **Requirements**:
 The following packages need to be installed:
@@ -22,6 +22,7 @@ lxml==4.8.0
 requests==2.27.1
 soupsieve==2.3.1
 urllib3==1.26.8
+youtube-dl==2021.4.26
 ```
 To install the above packages, change directory to the project folder
 ```shell
