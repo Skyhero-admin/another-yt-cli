@@ -9,7 +9,7 @@
 
 ---
 ## Demo:
-<img src="https://imgur.com/3gdz7KA" width=100%>
+<img src="https://imgur.com/3gdz7KA.gif" width=100%>
 
 ### **Requirements**:
 The following packages need to be installed:
