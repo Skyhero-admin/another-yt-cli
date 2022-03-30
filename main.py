@@ -11,7 +11,7 @@ def get_link(name):
 
 	soup = BeautifulSoup(r, "lxml")
 
-	script = soup.find_all("script")[33]
+	script = soup.find_all("script")[34]
 	# print(script)
 
 	json_text = re.search("var ytInitialData = (.+)[,;]{1}", str(script)).group(1)
