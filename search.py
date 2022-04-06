@@ -14,13 +14,14 @@ def get_link(name):
 	script = soup.find_all("script")[33]
 	# print(script)
 
+	with open("another.txt", "w", encoding='utf-8') as output:
+		output.write(soup.prettify())
+
 	json_text = re.search("var ytInitialData = (.+)[,;]{1}", str(script)).group(1)
 	json_data = json.loads(json_text)
 	# print(json_data)
 
 	# ME TESTING :)
-	# with open("file.txt", "w", encoding='utf-8') as output:
-	# 	output.write(soup.prettify())
 
 	# with open("script.txt", "w", encoding = "utf-8") as output:
 	# 	output.write(json_text)
